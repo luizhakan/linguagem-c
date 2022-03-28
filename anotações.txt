@@ -1,0 +1,13 @@
+\n nova linha
+\t tabulação
+\b backspace
+\r retorno
+\\ barra
+\" aspas
+\? interrogação
+\a ou \7 emite um bipe
+%% porcentagem
+
+#include <locale.h>
+setlocale(LC_ALL, "Portuguese");
+nessa importação e usando o setlocale, podemos usar acentuações no nosso programa.
