@@ -1,3 +1,4 @@
+// DEFINIÇÃO DE VARIÁVEIS
 #include <stdio.h>
 #include <locale.h>
 
