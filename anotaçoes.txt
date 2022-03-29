@@ -45,3 +45,12 @@ Regras da linguagem C para variáveis:
 - Nada de acentos, nem caracteres especiais
 - Único simbolo aceito é o sublinhado (underline)
 - Não pode ser uma palavra reservada
+
+Variável é aquilo que varia, constante é aquilo que não varia
+
+#define vs const
+- #define é uma diretiva de pré-processamento
+- const é uma palavra reservada do C
+- com #define, o valor é substituido antes da compilação
+- com const, a constante existe na memória
+- com const é possível indicar o tipo primitivo da constante
