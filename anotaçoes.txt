@@ -1,0 +1,47 @@
+\n nova linha
+\t tabulação
+\b backspace
+\r retorno
+\\ barra
+\" aspas
+\? interrogação
+\a ou \7 emite um bipe
+%% porcentagem
+
+#include <locale.h>
+setlocale(LC_ALL, "Portuguese");
+nessa importação e usando o setlocale, podemos usar acentuações no nosso programa.
+
+// Tipos primitivos
+int - numéros inteiros. exemplo:
+1834, -18, 123
+o int tem 4 prefixos, short, long, signed, unsigned
+- short %hd - vai ocupar metade da memória que o int ocupa (2)
+- long %ld - vai ocupar o dobro da memória que o int ocupa (4)
+- signed - um número inteiro que tem sinal, podendo ser positivo ou negativo
+- unsigned %u - um número inteiro que não tem sinal, é sempre positivo
+
+
+float - números reais, exemplo:
+4.5, 0.075, -1.0893
+
+char - string, um caracter, exemplo :
+a, b, c, d, e
+
+double - o dobro do ponto flutuante
+void - vazio, ou seja, ele não vai retornar nada
+
+%d int
+%f float/double
+%c char
+%s cadeia
+eu posso definir quantas casas decimais usar no float. exemplo:
+%.2f 60.6
+
+Regras da linguagem C para variáveis:
+- Toda variável começa com uma letra
+- Maiúsculas e minúsculas fazem diferença
+- Só usa letras, números e sublinhados (underline)
+- Nada de acentos, nem caracteres especiais
+- Único simbolo aceito é o sublinhado (underline)
+- Não pode ser uma palavra reservada
