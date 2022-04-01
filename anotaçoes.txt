@@ -60,3 +60,11 @@ lendo números
 float med;
 scanf("%d", &num);
 scanf("%f", &med);
+
+limpando a memória para um novo input
+fflush(stdin);
+
+o scanf não aceita espaços na string, então para strings, o certo é fgets, exemplo :
+char nome[20];
+fgets(nome, 20, stdin);
+
