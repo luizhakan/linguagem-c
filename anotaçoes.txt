@@ -54,3 +54,9 @@ Variável é aquilo que varia, constante é aquilo que não varia
 - com #define, o valor é substituido antes da compilação
 - com const, a constante existe na memória
 - com const é possível indicar o tipo primitivo da constante
+
+lendo números
+- int num;
+float med;
+scanf("%d", &num);
+scanf("%f", &med);
