@@ -18,5 +18,4 @@ void main()
     printf("------------------------------------");
     printf("\nMuito prazer, %sVocê tem %d anos e pesa %.2f KG\nFIM\n", nome, idade, peso);
     printf("------------------------------------\n");
-
 }

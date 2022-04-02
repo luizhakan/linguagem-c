@@ -6,6 +6,7 @@ void main()
     setlocale(LC_ALL, "Portuguese");
 
     printf(" Listagem de alunos \n\n");
+    
     printf(" Nome\t\tNota\n");
     printf("---------------------\n");
     printf(" Luiz Hakan\t10\n");
