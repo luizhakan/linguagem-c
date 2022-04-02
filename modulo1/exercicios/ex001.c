@@ -3,23 +3,13 @@
 
 void main()
 {
-    // setlocale (LC_ALL, "Portuguese");
-    // float n;
-    // printf("Digite um número real : ");
-    // scanf("%f", &n);
-    // printf("Número real : %.2f\n", n);
+    setlocale(LC_ALL, "Portuguese");
 
-    char nome[] = "Luiz Hakan";
-    char sexo = 'M';
-    float nota = 9.5;
-    char linhas[60] = "--------------------------------------------";
-    char *sexoLinhas = "Sexo";
-    char *nomeLinhas = "Nome";
-    char *notaLinhas = "Nota";
-
-    printf("%s\n", linhas);
-    printf("%2s", nomeLinhas);
-    printf("%15s", sexoLinhas);
-    printf("%20s", notaLinhas);
-    printf("\n|%-15s %-17c %0f|\n", nome, sexo);
+    printf(" Listagem de alunos \n\n");
+    printf(" Nome\t\tNota\n");
+    printf("---------------------\n");
+    printf(" Luiz Hakan\t10\n");
+    printf(" João Victor\t9.5\n");
+    printf(" Vovô Aprendiz\t8\n");
+    printf("---------------------\n");
 }
