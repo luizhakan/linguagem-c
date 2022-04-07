@@ -36,4 +36,44 @@ void main()
     printf("%.2f + %.2f = %.2f\n", m, n, o);
 
     printf("-----FIM-----\n");
+
+    // média
+    printf("Nota 1 : ");
+    float n1;
+    scanf("%f", &n1);
+    fflush(stdin);
+
+    printf("Nota 2 : ");
+    float n2;
+    scanf("%f", &n2);
+    fflush(stdin);
+
+    printf("Nota 3 : ");
+    float n3;
+    scanf("%f", &n3);
+    fflush(stdin);
+
+    printf("Nota 4 : ");
+    float n4;
+    scanf("%f", &n4);
+    fflush(stdin);
+
+    float media = (n1 + n2 + n3 + n4) / 4;
+    printf("Média : %.2f\n", media);
+    printf("-----FIM-----\n");
+
+    // fazendo desconto em porcentagem
+    printf("Preço : ");
+    float preco;
+    scanf("%f", &preco);
+    fflush(stdin);
+
+    printf("Desconto : ");
+    float desconto;
+    scanf("%f", &desconto);
+    fflush(stdin);
+
+    float calculoDesconto = preco - (preco * desconto / 100);
+
+    printf("O valor integral é R$%2.f, com o desconto de %2.f%%, fica : R$%2.f\n", preco, desconto, calculoDesconto);
 }
