@@ -76,3 +76,9 @@ operadores aritméticos
 - % módulo/resto de divisão
 
 para usar o operador de divisão corretamente, devemos definir os tipos dos números, se usarmos dois números inteiros, a divisão vai ser inteira, por isso se quisermos o resultado real devemos usar números reais
+
+ordem de precedência dos operadores aritméticos
+1) ()
+2) + - quem vier primeiro
+3) * / % quem vier primeiro
+4) + - binários
