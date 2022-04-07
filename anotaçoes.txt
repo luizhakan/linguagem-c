@@ -57,9 +57,9 @@ Variável é aquilo que varia, constante é aquilo que não varia
 
 lendo números
 - int num;
-float med;
-scanf("%d", &num);
-scanf("%f", &med);
+- float med;
+- scanf("%d", &num);
+- scanf("%f", &med);
 
 limpando a memória para um novo input
 fflush(stdin);
@@ -68,3 +68,11 @@ o scanf não aceita espaços na string, então para strings, o certo é fgets, e
 char nome[20];
 fgets(nome, 20, stdin);
 
+operadores aritméticos
+- + adição
+- - subtração
+- * multiplicação
+- / divisão
+- % módulo/resto de divisão
+
+para usar o operador de divisão corretamente, devemos definir os tipos dos números, se usarmos dois números inteiros, a divisão vai ser inteira, por isso se quisermos o resultado real devemos usar números reais
