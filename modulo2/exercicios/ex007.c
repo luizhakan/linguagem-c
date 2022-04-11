@@ -10,7 +10,7 @@ void main()
     float numero;
     scanf("%f", &numero);
     float dobro = numero * 2;
-    float tercaParte = numero * 3;
+    float tercaParte = (float) numero * 3;
 
     printf("Número %.2f, dobro é %.2f e a terça parte é %.2f", numero, dobro, tercaParte);
 }
