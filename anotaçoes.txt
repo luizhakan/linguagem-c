@@ -88,3 +88,13 @@ typecast ou coerção
 
 para forçar o tipo de alguma variavel numa outra variável, se eu criar as variáveis de número inteiro ou qualquer outro tipo a e b, e eu posso na minha variável definir o tipo das variaveis a e b, exemplo : 
 float soma = (float) a + b;
+
+operadores relacionais
+
+== igual
+!= diferente
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+os operadores sempre retornam um valor lógico. true == 1, false == 0
