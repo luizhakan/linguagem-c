@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <string.h>
 
 void main()
 {
@@ -38,5 +39,8 @@ void main()
 
     float media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-    printf("O aluno %sfoi %s na matéria com a média : %.1f", aluno, (media >= 6) ? "aprovado":"reprovado", media);
+    char ternario[30];
+    strcpy(ternario, (media >= 6) ? "aprovado" : "reprovado");
+
+    printf("O aluno %sfoi %s na matéria com a média : %.1f", aluno, ternario, media);
 }
