@@ -98,3 +98,10 @@ operadores relacionais
 >= maior ou igual
 <= menor ou igual
 os operadores sempre retornam um valor lógico. true == 1, false == 0
+
+#include <string.h>
+
+strcpy() - retorna a string copiada
+strlen() - retorna quantos caracteres tem dentro da string
+strcmp() - comparação entre duas strings
+strcat() - função de concatenação de strings
