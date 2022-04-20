@@ -1,6 +1,25 @@
 #include <stdio.h>
 #include <locale.h>
 #include <string.h>
+#include <ctype.h>
+
+char* strupr(char* s){
+    char* tmp = s;
+
+    for(;*tmp;++tmp){
+        *tmp = toupper((unsigned char)*tmp);
+    }
+    return s;
+}
+
+char* strlwr(char* s){
+    char* tmp = s;
+
+    for(;*tmp;++tmp){
+        *tmp = tolower((unsigned char)*tmp);
+    }
+    return s;
+}
 
 void main()
 {
@@ -10,8 +29,11 @@ void main()
     strcpy(nome, "Luiz Hakan");
     printf("Muito prazer %s\n", nome);
 
-    // char maiusculo[] = "luiz hakan";
-    // printf("MAIÚSCULO : %s", strupr(maiusculo));
+    char maiuscula[] = "luiz";
+    printf("MAIÚSCULA : %s\n", strupr(maiuscula));
+
+    char minuscula[] = "LUIZ";
+    printf("minúscula : %s\n", strlwr(minuscula));
 
     int tamanho = strlen(nome);
     printf("strlen : O nome \"%s\" tem %d caracteres\n", nome, tamanho);
@@ -21,3 +43,4 @@ void main()
 
     printf("strcat : %s\n", strcat(t1, t2));
 }
+
