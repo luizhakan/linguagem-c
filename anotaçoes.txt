@@ -105,3 +105,5 @@ strcpy() - retorna a string copiada
 strlen() - retorna quantos caracteres tem dentro da string
 strcmp() - comparação entre duas strings
 strcat() - função de concatenação de strings
+strupr() - abrir o arquivo aula05.c para ver como implementar esta funcionalidade
+strlwr() - abrir o arquivo aula05.c para ver como implementar esta funcionalidade
