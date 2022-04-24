@@ -12,7 +12,7 @@
 setlocale(LC_ALL, "Portuguese");
 nessa importação e usando o setlocale, podemos usar acentuações no nosso programa.
 
-// Tipos primitivos
+# Tipos primitivos
 int - numéros inteiros. exemplo:
 1834, -18, 123
 o int tem 4 prefixos, short, long, signed, unsigned
@@ -38,7 +38,7 @@ void - vazio, ou seja, ele não vai retornar nada
 eu posso definir quantas casas decimais usar no float. exemplo:
 %.2f 60.6
 
-Regras da linguagem C para variáveis:
+# Regras da linguagem C para variáveis:
 - Toda variável começa com uma letra
 - Maiúsculas e minúsculas fazem diferença
 - Só usa letras, números e sublinhados (underline)
@@ -55,20 +55,20 @@ Variável é aquilo que varia, constante é aquilo que não varia
 - com const, a constante existe na memória
 - com const é possível indicar o tipo primitivo da constante
 
-lendo números
+# lendo números
 - int num;
 - float med;
 - scanf("%d", &num);
 - scanf("%f", &med);
 
-limpando a memória para um novo input
+# limpando a memória para um novo input
 fflush(stdin);
 
-o scanf não aceita espaços na string, então para strings, o certo é fgets, exemplo :
+# o scanf não aceita espaços na string, então para strings, o certo é fgets, exemplo :
 char nome[20];
 fgets(nome, 20, stdin);
 
-operadores aritméticos
+# operadores aritméticos
 - + adição
 - - subtração
 - * multiplicação
@@ -77,19 +77,19 @@ operadores aritméticos
 
 para usar o operador de divisão corretamente, devemos definir os tipos dos números, se usarmos dois números inteiros, a divisão vai ser inteira, por isso se quisermos o resultado real devemos usar números reais
 
-ordem de precedência dos operadores aritméticos
+# ordem de precedência dos operadores aritméticos
 
 1) ()
 2) + - quem vier primeiro
 3) * / % quem vier primeiro
 4) + - binários
 
-typecast ou coerção
+# typecast ou coerção
 
 para forçar o tipo de alguma variavel numa outra variável, se eu criar as variáveis de número inteiro ou qualquer outro tipo a e b, e eu posso na minha variável definir o tipo das variaveis a e b, exemplo : 
 float soma = (float) a + b;
 
-operadores relacionais
+# operadores relacionais
 
 == igual
 != diferente
@@ -107,3 +107,34 @@ strcmp() - comparação entre duas strings
 strcat() - função de concatenação de strings
 strupr() - abrir o arquivo aula05.c para ver como implementar esta funcionalidade
 strlwr() - abrir o arquivo aula05.c para ver como implementar esta funcionalidade
+
+# operadores lógicos
+&& conjunção (e)
+|| disjunção (ou)
+! negação (não)
+
+&& na conjunção se os dois forem verdadeiros, o resultado é verdadeiro, se um for falso, será falso:
+v v = v
+v f = f
+f v = f
+f f = f 
+
+|| na disjunção, basta um ser verdadeiro para ele ser verdadeiro :
+v v = v
+v f = v
+f v = v
+f f = f
+
+! na negação uma coisa que não é verdadeira, é falsa, e uma coisa que não é falsa, é verdadeira
+v = f
+f = v
+
+# ordem de precedência dos operadores lógicos
+!
+&&
+||
+
+# incremento e decremento
+++ mais 1
+-- menos 1
+a ordem de pré e pós incremento é importante, exemplos na aula08 do módulo2
