@@ -138,3 +138,22 @@ f = v
 ++ mais 1
 -- menos 1
 a ordem de pré e pós incremento é importante, exemplos na aula08 do módulo2
+
+# operadores bitwise
+& conjunção
+1 1 = 1
+0 1 = 0
+1 0 = 0
+0 0 = 0
+
+| disjunção
+1 0 = 1
+0 1 = 1
+1 1 = 0
+0 0 = 0
+
+^ disjunção exclusiva
+1 1 = 0
+1 0 = 1
+0 1 = 1
+0 0 = 0
