@@ -157,3 +157,11 @@ a ordem de pré e pós incremento é importante, exemplos na aula08 do módulo2
 1 0 = 1
 0 1 = 1
 0 0 = 0
+
+>> right shift (deslocamento pra direita)
+desloca o meu número binário, para a direita
+ele remove os bits do final (dependendo de quantos bits vc vai deslocar para a direita)
+
+<< left shift (deslocamento pra esquerda)
+desloca o meu número binário, para a esquerda
+ele adiciona os bit no final (dependendo de quantos bits vc vai deslocar para a esquerda (sempre os bits deslocados para esquerda serão bits zero))
