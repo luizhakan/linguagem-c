@@ -6,7 +6,11 @@ void main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    char a = 'r';
+    char a;
+    printf("Digite uma letra : ");
+    scanf("%c", &a);
+    fflush(stdin);
+
     char antecessor = a - 1;
     char sucessor = a + 1;
 

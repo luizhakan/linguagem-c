@@ -4,6 +4,6 @@
 void main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int n = 18 | 19;
-    printf("Resultado : %d", n);
+    int n = 43 >> 3;
+    printf("O resultado é : %d\n", n);
 }
