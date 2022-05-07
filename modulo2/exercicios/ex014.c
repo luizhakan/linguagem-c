@@ -24,7 +24,7 @@ void main()
     int right = n1 >> d2;
 
     // <<
-    int left = n1 << d2; 
+    int left = n1 << d2;
 
     // imprimir na tela
     printf("%d >> %d = %d\n", n1, d2, right);
