@@ -165,3 +165,18 @@ ele remove os bits do final (dependendo de quantos bits vc vai deslocar para a d
 << left shift (deslocamento pra esquerda)
 desloca o meu número binário, para a esquerda
 ele adiciona os bit no final (dependendo de quantos bits vc vai deslocar para a esquerda (sempre os bits deslocados para esquerda serão bits zero))
+
+# pegar hora atual
+#include <time.h>
+time_t t;
+time(&t);
+struct tm *data;
+data = localtime(&t);
+int d = data -> tm_mday; // dia
+                tm_mon; // mês
+                tm_year; // ano (a partir de 1900)
+                tm_wdar; // dia da semana
+                tm_hour; // hora atual
+                tm_min; // minuto atual
+                tm_sec; // segundo atual
+
