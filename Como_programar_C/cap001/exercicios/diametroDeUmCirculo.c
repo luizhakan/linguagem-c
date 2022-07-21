@@ -13,5 +13,5 @@ void main()
 
 void circulo(int area){
     int raio = 3.16 * pow(area, area);
-    printf("A área do círculo é : %d\n", raio);
+    printf("O diâmetro do círculo é : %d\n", raio);
 }
