@@ -11,35 +11,44 @@ void main()
     int n4 = get_int("4º : ");
     int n5 = get_int("5º : ");
 
-    // VOU IMPLEMENTAR UM LOOP COM ISSO AQUI
-    float menor = FLT_MIN;
-    float maior = FLT_MAX;
-    // ENTÃO PRECISO ESTUDAR MAIS PARA PODER SOLUCIONAR ISSO DA MANEIRA MAIS PERFORMÁTICA NA LINGUAGEM C
+    int menor, maior;
 
-    
-
-    if (n1 < n2)
+    if (n1 > n2)
     {
-        menor = n1;
-    }
-    else if (n2 < n3)
-    {
+        maior = n1;
         menor = n2;
     }
-    else if (n3 < n4){
+    else if (n2 > n1)
+    {
+        maior = n2;
+        menor = n1;
+    }
+
+    if (n3 > maior)
+    {
+        maior = n3;
+    }
+    else if (n3 < menor)
+    {
         menor = n3;
-    } else if(n4 < n5){
+    }
+
+    if (n4 > maior)
+    {
+        maior = n4;
+    }
+    else if (n4 < menor)
+    {
         menor = n4;
     }
 
-    if(n1 > n2){
-        maior = n1;
-    } else if(n2 > n3){
-        maior = n2;
-    } else if(n3 > n4){
-        maior = n3;
-    } else if (n4 > n5){
-        maior = n4;
+    if (n5 > maior)
+    {
+        maior = n5;
+    }
+    else if (n5 < menor)
+    {
+        menor = n5;
     }
 
     printf("O maior número é : %d e o menor : %d\n", maior, menor);
