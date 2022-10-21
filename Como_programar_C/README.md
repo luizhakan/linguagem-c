@@ -1,7 +1,7 @@
 - [x] Capítulo 01 – Conceitos da Computação
 - [x] Capítulo 02 – Introdução à programação em C
 - [x] Capítulo 03 – Desenvolvimento da Programação Estruturada
-- [] Capítulo 04 – Controle do programa
+- [x] Capítulo 04 – Controle do programa
 - [] Capítulo 05 – Funções
 - [] Capítulo 06 – Arrays
 - [] Capítulo 07 – Ponteiros
