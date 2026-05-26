@@ -68,3 +68,39 @@ int main(void)
  * >= maior ou igual que
  * <= menor ou igual que
  */
+
+/**
+ * palavras-chave do C
+ * auto 
+ * break 
+ * case 
+ * Char
+ * const 
+ * continue 
+ * default 
+ * do
+ * double
+ * else
+ * enum
+ * extern
+ * float
+ * for
+ * goto
+ * if
+ * int
+ * long
+ * register
+ * return
+ * short
+ * signed
+ * sizeof
+ * static
+ * struct
+ * switch
+ * typedef
+ * uniom
+ * unsigned
+ * void
+ * volatile
+ * while
+ */
