@@ -101,6 +101,26 @@ void repeticaoComSentinela()
     printf("A média é: %.2f\n", media);
 }
 
+void topDownPorEtapas(){
+    // Pegar a quantidade de alunos que passaram. Nota de passar: >= 7;
+    // Calcular o total de alunos. SE >= 8 alunos passarem, imprimir "Cobrar taxa escolar". SE NÃO, não imprimir.
+    // Deverá mostrar quantos alunos passaram e quantos foram reprovados.
+    int quantidadePassaram = 0, quantidadeNaoPassaram = 0, nota = 0;
+
+    while (nota >= 0){
+        printf("Digite a nota: ");
+        scanf("%d", &nota);
+
+        if (nota >= 7){
+            quantidadePassaram = quantidadePassaram + 1;
+        } else {
+            quantidadeNaoPassaram = quantidadeNaoPassaram + 1;
+        }
+    }
+
+    printf("%d alunos passaram. %s", quantidadePassaram, quantidadePassaram >= 8 ? "cobrar taxa escolar\n" : "não cobrar taxa escolar\n");
+}
+
 int main(void)
 {
     printf("Bem vindo ao C!\n");
@@ -122,7 +142,9 @@ int main(void)
     // ternario();
     // repeticaoMediaComWhile();
 
-    repeticaoComSentinela();
+    // repeticaoComSentinela();
+
+    topDownPorEtapas();
 
     return 0;
 }
